@@ -1,0 +1,101 @@
+
+     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Shadows+Into+Light&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('./3334896.jpg');
+        background-size: cover;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+    }
+    input {
+        background-color: black;
+        outline: none;
+        border: 0.2px solid rgba(255, 255, 255, 0.413);
+        padding: 0.4em 1em;
+        border-radius: 24px;
+        background: rgba( 0, 0, 0, 0.30 );
+        color: white;
+        font-family: inherit;
+        font-weight: 500;
+        width: 80%;
+        
+    }
+    input::placeholder {
+        font-family: inherit;
+        font-weight: 500;
+    }
+    .container {
+        padding: 40px;
+        background: rgba( 0, 0, 0, 0.30 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 11.5px );
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        border-radius: 30px;
+        max-width: 420px;
+        width: 100%;
+        margin: 1em;
+        overflow: hidden;
+    }
+    
+    button {
+        margin: 0.5em;
+        border-radius: 50%;
+        border: none;
+        height: 44px;
+        width: 44px;
+        outline: none;
+        background: rgba(255, 255, 255, 0.126);
+        color: white;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;  
+    }
+    h1, h2 {
+        margin-block: 10px;
+    }
+    h1 {
+        font-weight: 600;
+        font-size: 1.7rem;
+    }
+    h2 {
+        font-weight: 600;
+        font-size: 2.3rem;
+    }
+    h3 {
+        font-weight: 400;
+        font-size: 1rem;
+        margin-block: 2px;
+    }
+    a {
+        display: block;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    a img {
+        width: 55px;
+        /* margin-inline: auto; */
+    }
+    
+    .weather-des {
+        display: inline;
+        text-transform: capitalize;
+
+    }
+    .flex {
+        display: flex;
+        /* justify-content: left; */
+        align-items: center;
+        transform: translateX(-12px);
+    }
+    .flex img {
+        transform: scale(1.1);
+    }
+    
