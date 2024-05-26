@@ -46,6 +46,7 @@
     }
     
     button {
+        /* display: inline-; */
         margin: 0.5em;
         border-radius: 50%;
         border: none;
@@ -98,4 +99,25 @@
     .flex img {
         transform: scale(1.1);
     }
-    
+    .search-box {
+        position: relative;
+        display: inline;
+    }
+    /* .del {
+        display: none;
+        position: absolute;
+        right: 0;
+        margin-top: 17px;
+        font-size: 0.9rem;
+        /* font-weight: 100; */
+        transform: translateX(-18px);
+    } */
+    input:focus ~ .del {
+        display: inline;
+    }
+
+    @media screen and (max-width: 450px) {
+        input {
+            width: 70%;
+        }
+      }

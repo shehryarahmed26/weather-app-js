@@ -6,7 +6,13 @@ let des = document.querySelector('.weather-des')
 let icon = document.querySelector('.w-pic')
 let humadity = document.querySelector('.humidity')
 let wind_speed = document.querySelector('.wind')
+// let del = document.querySelector('i')
+
  async function checkweather(city) {
+    event.preventDefault()
+    search_bar.value = ''
+    // del.innerHTML = ''
+    // del.style.display = 'inline'
     let API_key = '1159472b001a97d0d78be1777edf32a1'
     let URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_key}`
     const weather_data =  await fetch(URL) .then(response =>  response.json())
@@ -21,11 +27,11 @@ let wind_speed = document.querySelector('.wind')
             icon.src='https://openweathermap.org/img/wn/01d.png'
             break;
             case 'fog':
-            icon.src='https://openweathermap.org/img/wn/50d.png'
+                icon.src='https://openweathermap.org/img/wn/50d.png'
             break;
             case 'scattered clouds':
-            icon.src='https://openweathermap.org/img/wn/03d.png'
-            break;
+                icon.src='https://openweathermap.org/img/wn/03d.png'
+                break;
             case 'broken clouds':
             icon.src='https://openweathermap.org/img/wn/04d.png '
             break;
@@ -56,7 +62,6 @@ button.addEventListener('click', () => {
 })
 search_bar.addEventListener('keypress', () => {
     if (event.key === 'Enter') {
-        checkweather(search_bar.value)
-        
+        checkweather(search_bar.value)    
     } 
 })
