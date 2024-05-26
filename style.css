@@ -110,11 +110,11 @@
         margin-top: 17px;
         font-size: 0.9rem;
         /* font-weight: 100; */
-        transform: translateX(-18px);
+        /* transform: translateX(-18px);
     } */
-    input:focus ~ .del {
+    /* input:focus ~ .del {
         display: inline;
-    }
+    } */ 
 
     @media screen and (max-width: 450px) {
         input {
