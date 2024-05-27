@@ -103,6 +103,35 @@
         position: relative;
         display: inline;
     }
+    /* HTML: <div class="loader"></div> */
+/* HTML: <div class="loader"></div> */
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 9px;
+    margin-left: 20px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    animation: l5 1s infinite linear alternate;
+  }
+  @keyframes l5 {
+    0%  {
+        box-shadow: 20px 0 #cccccc, -20px 0 #ffffff;
+        background: #e6e6e6;
+    }
+    33% {
+        box-shadow: 20px 0 #d9d9d9, -20px 0 #ffffff;
+        background: #ffffff;
+    }
+    66% {
+        box-shadow: 20px 0 rgba(204, 204, 204, 0.4), -20px 0 #ffffff;
+        background: #ffffff;
+    }
+    100% {
+        box-shadow: 20px 0 #ffffff, -20px 0 #ffffff;
+        background: #ffffff;
+    }
+}
+
     /* .del {
         display: none;
         position: absolute;

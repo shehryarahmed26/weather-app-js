@@ -6,16 +6,19 @@ let des = document.querySelector('.weather-des')
 let icon = document.querySelector('.w-pic')
 let humadity = document.querySelector('.humidity')
 let wind_speed = document.querySelector('.wind')
+let loader = document.querySelector('.loader')
 // let del = document.querySelector('i')
 
  async function checkweather(city) {
     event.preventDefault()
     search_bar.value = ''
+    loader.style.display = 'block'
     // del.innerHTML = ''
     // del.style.display = 'inline'
     let API_key = '1159472b001a97d0d78be1777edf32a1'
     let URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_key}`
     const weather_data =  await fetch(URL) .then(response =>  response.json())
+    loader.style.display = 'none'
     weather.innerHTML = (weather_data.main.temp - 273.15).toFixed(2) + '<sup>°C</sup>';
     city_text.innerHTML = `Weather in ${weather_data.name}`
     des.innerHTML = weather_data.weather[0].description
